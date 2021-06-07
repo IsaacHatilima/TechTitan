@@ -1,0 +1,112 @@
+{% extends 'website_files/base.html' %}
+{% load static %}
+{% block content %}
+    <section class="page-title page-title-layout12 bg-overlay bg-parallax text-center">
+      <div class="bg-img"><img src="{% static 'assets/images/page-titles/4.jpg' %}" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-3">
+            <span class="pagetitle__subheading">Trusted By The World's Best Organizations</span>
+            <h1 class="pagetitle__heading">Solutions to keep your business safe & ensure high availability.</h1>
+            <a href="{% url 'contact_us' %}" class="btn btn__primary btn__icon btn__xl mx-3">
+              <span>More About Us</span><i class="icon-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-layout5 pt-130 pb-130">
+      <div class="container">
+        <div class="row heading-layout2">
+          <div class="col-12">
+            <h2 class="heading__subtitle color-body">Nationwide Service, Local Expertise</h2>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <h3 class="heading__title mb-30">Our technology allows you to offer the <span class="underlined-text">latest
+                software</span> to your possible customers!
+            </h3>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 offset-xl-1">
+            <div class="about__Text">
+              <p>Improve efficiency, leverage tech, and provide better customer experiences with the modern technology
+                services available all over the world.</p>
+            </div>
+            <ul class="list-items list-items-layout2 list-horizontal list-unstyled d-flex flex-wrap mt-40 mb-30">
+              <li>Eliminate Repeat Entry</li>
+              <li>Simpliy Communication</li>
+              <li>Drive Business Process</li>
+              <li>Speed Up Transactions</li>
+              <li>Structure Data & Docs</li>
+              <li>Automate Workflows</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-layout1 pt-90 pb-90 bg-overlay bg-overlay-primary">
+      <div class="bg-img"><img src="assets/images/banners/3.jpg" alt="background"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="col-inner">
+              <div class="heading-layout2 heading-light mb-40">
+                <h3 class="heading__title mb-30">Timely service delivery & incident resolutions!!</h3>
+                <p class="heading__desc">We are experienced professionals who understand that IT services are changing, and are true partners who care about your success. Our team provides a consultative approach on emerging technology.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="contact-panel">
+              <form class="contact-panel__form" method="post" action="{% url 'find_out' %}" id="contactForm">
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="contact-name">Name (required)</label>
+                      <input type="text" required class="form-control" placeholder="Name" id="contact-name" name="contact-name"
+                        required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="contact-email">Email (required)</label>
+                      <input type="email" required class="form-control" placeholder="Email" id="contact-email"
+                        name="contact-email" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="form-group">
+                      <label for="contact-Phone">Inquiry (required)</label>
+                      <select required class="form-control">
+                        <option value="">Select Service</option>
+                        <option value="Email Hosting">IT Management</option>
+                        <option value="IT Counsultation">Cyber Security</option>
+                        <option value="Software Development">Software Development</option>
+                        <option value="Website Developemnt">Networking And Cloud Computing</option>
+                        <option value="Website Developemnt">IT Consulting</option>
+                        <option value="Website Developemnt">Backup & Recovery</option>
+                        <option value="Website Developemnt">Email Hosting</option>
+                        <option value="Website Developemnt">Website Hosting</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="form-group">
+                      <label for="contact-message">Additional Details (required)</label>
+                      <textarea required class="form-control" placeholder="Describe your inquirey!" id="contact-message"
+                        name="contact-message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn__secondary btn__xl btn__block">Submit Request </button>
+                    <div class="contact-result"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

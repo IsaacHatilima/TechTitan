@@ -1,0 +1,186 @@
+
+{% extends 'website_files/base.html' %}
+{% load static %}
+{% block content %}    
+    <section class="page-title page-title-layout9 bg-overlay bg-parallax">
+      <div class="bg-img"><img src="{% static 'assets/images/page-titles/10.jpg' %}" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <h1 class="pagetitle__heading">Cyber Security Services</h1>
+            <p class="pagetitle__desc">To maintain Data Integrity and Data Lose Prevention, you will need to ensure you have you infrastructure protected from Cyber Crime activities at Network, Hardware and Software levels.
+            </p>
+            <a href="{% url 'contact_us' %}" class="btn btn__white btn__bordered btn__xl btn__icon">
+              <span>Get Started</span><i class="icon-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="secondary-nav secondary-nav-internal-navigation sticky-top py-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="nav nav-tabs justify-content-center">
+              <a href="#" data-scroll="about" class="nav__link">Overview</a>
+              <a href="#" data-scroll="features" class="nav__link">Features</a>
+              <a href="#" data-scroll="banner" class="nav__link">Request A Quote </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about" class="about-layout4 pt-130 pb-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-lg-6">
+            <div class="heading-layout2 mb-70">
+              <h2 class="heading__subtitle color-body">Nation wide Service, Local Expertise</h2>
+              <h3 class="heading__title mb-30">With our approach to Cyber Security, you can be rest assured that your infrastructure is protected giving you a  <span
+                 class="underlined-text">PEACE</span> of mind as you work.
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="row about__Text">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 ">
+            <p>New inovations breed new threats, and because we understand how valuable your data is we will ensure it is protected. Data and Information is what drives you business forward and should be protected at all costs. Our approach to Cyber Security ensures that all bases are covered giving you a peace of mind as you work on ensuring you drive your business forward. We use some the the worlds best methods in ensuring you get the best service possible.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 offset-xl-1">
+            <p>We are consistently updating our knowledge base to ensure you get the best service worth your money. With this approach, this means that you will be covered 24/7 at an optimum setup to protect your data </p>
+            <p>Become a partner and achieve the following;</p>
+            <ul class="list-items list-items-layout2 list-horizontal list-unstyled d-flex flex-wrap mt-40 mb-0">
+              <li>Newtwork Security</li>
+              <li>Hardware Security</li>
+              <li>Software Security</li>
+              <li>Infrastructure Security</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-12 col-lg-5">
+            <div class="about__img about__img-1">
+              <img src="{% static 'assets/images/about/2.jpg' %}" alt="about">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-7">
+            <div class="about__img about__img-2">
+              <img src="{% static 'assets/images/about/4.jpg' %}" alt="about">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features-layout2 pt-130 pb-0 mb-130 z-index-2">
+      <div class="bg-img"><img src="{% static 'assets/images/backgrounds/7.jpg' %}" alt="background"></div>
+      <div class="container">
+        <div class="row heading heading-layout2 mb-50">
+          
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <h3 class="heading__title color-white">Have your IT Infrastructure protected at all times.</h3>
+          </div>
+        </div>
+        <div class="row features-wrapper mt-40">
+          <!-- Feature item #1-->
+          <div class="col-sm-6 col-md-6 col-lg-3 feature-item">
+            <div class="feature-item__icon">
+              <i class="icon-network"></i>
+            </div>
+            <h4 class="feature-item__title mb-0">Network Security</h4>
+          </div>
+          <!-- Feature item #2-->
+          <div class="col-sm-6 col-md-6 col-lg-3 feature-item">
+            <div class="feature-item__icon">
+              <i class="icon-software"></i>
+            </div>
+            <h4 class="feature-item__title mb-0">Software Security</h4>
+          </div>
+          <!-- Feature item #3-->
+          <div class="col-sm-6 col-md-6 col-lg-3 feature-item">
+            <div class="feature-item__icon">
+              <i class="icon-relational"></i>
+            </div>
+            <h4 class="feature-item__title mb-0">Hardware Security</h4>
+          </div>
+          <!-- Feature item #4-->
+          <div class="col-sm-6 col-md-6 col-lg-3 feature-item">
+            <div class="feature-item__icon">
+              <i class="icon-Primary"></i>
+            </div>
+            <h4 class="feature-item__title mb-0">Infrastructure Security</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="banner" class="banner-layout1 pt-90 pb-90 bg-overlay bg-overlay-primary">
+      <div class="bg-img"><img src="{% static 'assets/images/banners/3.jpg' %}" alt="background"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="col-inner">
+              <div class="heading-layout2 heading-light mb-40">
+                <h3 class="heading__title mb-30">Timely service delivery & incident resolutions!!</h3>
+                <p class="heading__desc">We are experienced professionals who understand that IT services are changing, and are true partners who care about your success. Our team provides a consultative approach on emerging technology.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="contact-panel">
+              <form class="contact-panel__form" method="post" action="{% url 'find_out' %}" id="contactForm">
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="contact-name">Name (required)</label>
+                      <input type="text" required class="form-control" placeholder="Name" id="contact-name" name="contact-name"
+                        required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="contact-email">Email (required)</label>
+                      <input type="email" required class="form-control" placeholder="Email" id="contact-email"
+                        name="contact-email" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="form-group">
+                      <label for="contact-Phone">Inquiry (required)</label>
+                      <select required class="form-control">
+                        <option value="">Select Service</option>
+                        <option value="Email Hosting">IT Management</option>
+                        <option value="IT Counsultation">Cyber Security</option>
+                        <option value="Software Development">Software Development</option>
+                        <option value="Website Developemnt">Networking And Cloud Computing</option>
+                        <option value="Website Developemnt">IT Consulting</option>
+                        <option value="Website Developemnt">Backup & Recovery</option>
+                        <option value="Website Developemnt">Email Hosting</option>
+                        <option value="Website Developemnt">Website Hosting</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="form-group">
+                      <label for="contact-message">Additional Details (required)</label>
+                      <textarea required class="form-control" placeholder="Describe your inquirey!" id="contact-message"
+                        name="contact-message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn__secondary btn__xl btn__block">Submit Request </button>
+                    <div class="contact-result"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

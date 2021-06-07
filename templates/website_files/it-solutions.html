@@ -1,0 +1,169 @@
+{% extends 'website_files/base.html' %}
+{% load static %}
+{% block content %}
+    <section class="page-title page-title-layout8 bg-overlay bg-parallax">
+      <div class="bg-img"><img src="{% static 'assets/images/page-titles/8.jpg' %}" alt="background"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <span class="pagetitle__subheading">Your Trusted IT Partners</span>
+            <h1 class="pagetitle__heading">Our dedication to ensuring you stay ahead is top priority!
+            </h1>
+            <a href="{% url 'about-us' %}" class="btn btn__primary btn__icon btn__xl mr-30">
+              <span>More About Us</span><i class="icon-arrow-right"></i>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 cta-banner-wrapper d-flex justify-content-end">
+            <div class="cta-banner">
+              <div class="slick-carousel" data-slick='{"slidesToShow": 1, "arrows": false, "dots": true}'>
+                <div class="cta-banner__item">
+                  <div class="cta-banner__icon"><i class="icon-technician"></i></div>
+                  <h4 class="cta-banner__title mb-0">Utilising latest timelineing solutions, and decades of work
+                    experience.
+                  </h4>
+                </div>
+                <div class="cta-banner__item">
+                  <div class="cta-banner__icon"><i class="icon-funnel"></i></div>
+                  <h4 class="cta-banner__title mb-0">Thinking insightsthrough verified information to help you right
+                    decisions!
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="services-layout2 bg-no-repeat bg-size-auto bg-top-right pt-130 pb-90">
+      <div class="bg-img"><img src="{% static 'assets/images/backgrounds/6.png' %}" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
+            <div class="heading heading-layout2 text-center mb-50">
+              <h2 class="heading__subtitle">Nationwide Service, Local Expertise</h2>
+              <h3 class="heading__title">Our technology allows you to offer the latest software to your possible
+                customers!
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="row services-wrapper">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="service-item">
+              <div class="service-item__content">
+                <div class="service-item__icon">
+                  <i class="icon-server"></i>
+                </div>
+                <h4 class="service-item__title">IT Management <br> Services</h4>
+                <p class="service-item__desc">IT management services that manages and oversees the IT infrastructure of your
+                  organization responsible for networking and operations.</p>
+                <a href="{% url 'it_management_services' %}" class="btn btn__secondary btn__link">
+                  <span>Read More</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div>
+              <div class="service-item__overlay bg-overlay bg-overlay-primary">
+                <div class="bg-img"><img src="{% static 'assets/images/services/1.jpg' %}" alt="background"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="service-item">
+              <div class="service-item__content">
+                <div class="service-item__icon">
+                  <i class="icon-cloud"></i>
+                </div>
+                <h4 class="service-item__title">Cyber Security<br> Services</h4>
+                <p class="service-item__desc">Drive your business and manage risk with us when it comes
+                  cyber security, cloud, and manage security services and extend your team with leading experts.</p>
+                <a href="{% url 'cyber_security_services' %}" class="btn btn__secondary btn__link">
+                  <span>Read More</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div>
+              <div class="service-item__overlay bg-overlay bg-overlay-primary">
+                <div class="bg-img"><img src="{% static 'assets/images/services/2.jpg' %}" alt="background"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="service-item">
+              <div class="service-item__content">
+                <div class="service-item__icon">
+                  <i class="icon-programming"></i>
+                </div>
+                <h4 class="service-item__title">Software Development<br> Services</h4>
+                <p class="service-item__desc">We develop solutions that help you make informed decisions that keep your business going forward especially with rapid changes we face on a daily basis.</p>
+                <a href="{% url 'software_dev_services' %}" class="btn btn__secondary btn__link">
+                  <span>Read More</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div>
+              <div class="service-item__overlay bg-overlay bg-overlay-primary">
+                <div class="bg-img"><img src="{% static 'assets/images/services/5.jpg' %}" alt="background"></div>
+              </div>
+            </div>
+          </div>  
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="service-item">
+              <div class="service-item__content">
+                <div class="service-item__icon">
+                  <i class="icon-network"></i>
+                </div>
+                <h4 class="service-item__title">Networking and Cloud Computing<br> Services</h4>
+                <p class="service-item__desc">Cloud computing is the on-demand, availability of computer system
+                  resources, especially data storage and computing power, without direct active management by the user.
+                </p>
+                <a href="{% url 'networking_and_cloud_services' %}" class="btn btn__secondary btn__link">
+                  <span>Read More</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div>
+              <div class="service-item__overlay bg-overlay bg-overlay-primary">
+                <div class="bg-img"><img src="{% static 'assets/images/services/3.jpg' %}" alt="background"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="service-item">
+              <div class="service-item__content">
+                <div class="service-item__icon">
+                  <i class="icon-technician"></i>
+                </div>
+                <h4 class="service-item__title">IT Consulting <br> Services</h4>
+                <p class="service-item__desc">Trying to implement new technologies can be a challenge. With us on you side, we will give you information on the current technologies to ensure you have the best technologies possible.</p>
+                <a href="{% url 'it_consultations' %}" class="btn btn__secondary btn__link">
+                  <span>Read More</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div>
+              <div class="service-item__overlay bg-overlay bg-overlay-primary">
+                <div class="bg-img"><img src="{% static 'assets/images/services/4.jpg' %}" alt="background"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="service-item">
+              <div class="service-item__content">
+                <div class="service-item__icon">
+                  <i class="icon-file"></i>
+                </div>
+                <h4 class="service-item__title">Backup & Recovery<br> Services</h4>
+                <p class="service-item__desc">While you can’t predict unexpected events, we’ll ensure the right
+                  precautions are in place to minimize downtime and keep you moving in the right direction.</p>
+                <a href="{% url 'data_backup_and_recovery' %}" class="btn btn__secondary btn__link">
+                  <span>Read More</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div>
+              <div class="service-item__overlay bg-overlay bg-overlay-primary">
+                <div class="bg-img"><img src="{% static 'assets/images/services/6.jpg' %}" alt="background"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/techzm/django_apps/techtitan
+    - /bin/cp -R * $DEPLOYPATH

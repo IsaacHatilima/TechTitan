@@ -1,0 +1,143 @@
+{% extends 'website_files/base.html' %}
+{% load static %}
+{% block content %}
+
+    <section class="page-title page-title-layout2 bg-overlay bg-parallax">
+      <div class="bg-img"><img src="{% static 'assets/images/page-titles/light-bulb-4514505_1920.jpg' %}" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <span class="pagetitle__subheading">Nationwide Service, Local Expertise</span>
+            <h1 class="pagetitle__heading">Our technology allows you to offer the <span class="text-underlined">latest
+                software</span> to your possible customers!
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="secondary-nav secondary-nav-layout2 sticky-top py-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="nav nav-tabs justify-content-center">
+              <a href="{% url 'about-us' %}" class="nav__link">About Us</a>
+              <a href="{% url 'why_us' %}" class="nav__link active">Why Choose Us</a>
+              <!-- <a href="{% url 'out_team' %}" class="nav__link">Leadership Team</a> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="about-layout2 pb-130">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+            <div class="about__img">
+              <img src="{% static 'assets/images/about/question-mark-1019820_1920.jpg' %}" alt="about">
+              <div class="cta-banner">
+                <h4 class="cta-banner__title mb-30">Thinking insights, verified driven research, and metrics data help
+                  you make the right decisions!
+                </h4>
+                <a href="case-studies-modern.html" class="btn btn__primary btn__link">
+                  <span>See Our Work</span><i class="icon-arrow-right icon-outlined"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+            <div class="heading-layout2 mb-30">
+              <h2 class="heading__subtitle">Partners you can trust</h2>
+              <h3 class="heading__title mb-30">Manages service delivery across various business like, Finance, Agriculture and
+                other IT departments!!
+              </h3>
+            </div>
+            <div class="about__Text">
+              <p>TechTitan has been helping organizations throughout the country to manage their IT Infrastructure with our unique approach
+                to technology management and consultancy solutions. </p>
+              <p>As an IT Service Provider, our knowledgebase is at you disposal to help you archieve the goals you have always wanted.</p>
+              <ul class="list-items list-unstyled mb-0">
+                <li>Giving you the best service possible </li>
+                <li>Ensuring post development and deployment support is available</li>
+                <li>Always inovative to ensure you keep up with technology changes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="features-layout1 pt-130">
+      <div class="bg-img"><img src="{% static 'assets/images/backgrounds/10.jpg' %}" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="heading heading-layout2 mb-40">
+              <h2 class="heading__subtitle color-body">Ensure High Availability of Your Services</h2>
+              <h3 class="heading__title color-white">Easy solutions for all difficult IT problems, keep business safe &
+                ensure high availability.</h3>
+            </div>
+            <a href="{% url 'contact_us' %}" class="btn btn__white btn__bordered btn__xl btn__icon minwidth-170">
+              <span>Get Started</span>
+              <i class="icon-arrow-right"></i>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="row features-wrapper mt-40">
+              
+              <div class="col-sm-6 feature-item">
+                <div class="feature-item__icon">
+                  <i class="icon-statistic"></i>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h4 class="feature-item__title mb-0">Software Asset Management</h4>
+                  <a href="#"><i class="icon-arrow-right icon-outlined"></i></a>
+                </div>
+              </div>
+              <div class="col-sm-6 feature-item">
+                <div class="feature-item__icon">
+                  <i class="icon-software"></i>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h4 class="feature-item__title mb-0">Software Development</h4>
+                  <a href="#"><i class="icon-arrow-right icon-outlined"></i></a>
+                </div>
+              </div>
+              <div class="col-sm-6 feature-item">
+                <div class="feature-item__icon">
+                  <i class="icon-envelope"></i>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h4 class="feature-item__title mb-0">Email Hosting</h4>
+                  <a href="#"><i class="icon-arrow-right icon-outlined"></i></a>
+                </div>
+              </div>
+              <div class="col-sm-6 feature-item">
+                <div class="feature-item__icon">
+                  <i class="icon-relational"></i>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h4 class="feature-item__title mb-0">Web Hosting & Maintainace</h4>
+                  <a href="#"><i class="icon-arrow-right icon-outlined"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-50 contact-text">
+              <div class="col-sm-9 px-0">
+                <strong class="color-white">If you have any questions or need help, feel free to contact us
+                  <a href="#">(+260) 966477311</a></strong>
+              </div>
+              <div class="col-sm-3 px-0 d-flex justify-content-end">
+                <a href="{% url 'contact_us' %}" class="btn btn__primary btn__primary-style2 minwidth-120">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

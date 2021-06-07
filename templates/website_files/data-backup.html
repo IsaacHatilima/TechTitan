@@ -1,0 +1,133 @@
+
+{% extends 'website_files/base.html' %}
+{% load static %}
+{% block content %}    
+    <section class="page-title page-title-layout9 bg-overlay bg-parallax">
+      <div class="bg-img"><img src="{% static 'assets/images/page-titles/Backup-pc.png' %}" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h1 class="pagetitle__heading">Data Backup and Recovery</h1>
+            <p class="pagetitle__desc">Data and Information is what drives organaisations forward, we therefore need to ensure it is safely stored.</p>
+            <a href="{% url 'contact_us' %}" class="btn btn__white btn__bordered btn__xl btn__icon">
+              <span>Get Started</span><i class="icon-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="secondary-nav secondary-nav-internal-navigation sticky-top py-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="nav nav-tabs justify-content-center">
+              <a href="#" data-scroll="about" class="nav__link">Overview</a>
+              <a href="#" data-scroll="banner" class="nav__link">Request A Quote </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about" class="about-layout4 pt-130 pb-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-lg-6">
+            <div class="heading-layout2 mb-70">
+              <h3 class="heading__title mb-30">Data and Information is worth a lot more and should be saved in a secure place.
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="row about__Text">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 ">
+            <p>While you can’t predict unexpected events, we’ll ensure the right precautions are in place to minimize downtime and keep you moving in the right direction. How will we do this? we will ensure that important files are safely tacked away somewhere safe so that when the unexpected happens you still have your data.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 offset-xl-1">
+            <p>We live in a data driven world, ensure that all your information is saved in a secure place.</p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-12 col-lg-5">
+            <div class="about__img about__img-1">
+              <img src="{% static 'assets/images/about/2.jpg' %}" alt="about">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-7">
+            <div class="about__img about__img-2">
+              <img src="{% static 'assets/images/about/4.jpg' %}" alt="about">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="banner" class="banner-layout1 pt-90 pb-90 bg-overlay bg-overlay-primary">
+      <div class="bg-img"><img src="{% static 'assets/images/banners/3.jpg' %}" alt="background"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="col-inner">
+              <div class="heading-layout2 heading-light mb-40">
+                <h3 class="heading__title mb-30">Timely service delivery & incident resolutions!!</h3>
+                <p class="heading__desc">We are experienced professionals who understand that IT services are changing, and are true partners who care about your success. Our team provides a consultative approach on emerging technology.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="contact-panel">
+              <form class="contact-panel__form" method="post" action="{% url 'find_out' %}" id="contactForm">
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="contact-name">Name (required)</label>
+                      <input type="text" required class="form-control" placeholder="Name" id="contact-name" name="contact-name"
+                        required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="contact-email">Email (required)</label>
+                      <input type="email" required class="form-control" placeholder="Email" id="contact-email"
+                        name="contact-email" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="form-group">
+                      <label for="contact-Phone">Inquiry (required)</label>
+                      <select required class="form-control">
+                        <option value="">Select Service</option>
+                        <option value="Email Hosting">IT Management</option>
+                        <option value="IT Counsultation">Cyber Security</option>
+                        <option value="Software Development">Software Development</option>
+                        <option value="Website Developemnt">Networking And Cloud Computing</option>
+                        <option value="Website Developemnt">IT Consulting</option>
+                        <option value="Website Developemnt">Backup & Recovery</option>
+                        <option value="Website Developemnt">Email Hosting</option>
+                        <option value="Website Developemnt">Website Hosting</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="form-group">
+                      <label for="contact-message">Additional Details (required)</label>
+                      <textarea required class="form-control" placeholder="Describe your inquirey!" id="contact-message"
+                        name="contact-message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn__secondary btn__xl btn__block">Submit Request </button>
+                    <div class="contact-result"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

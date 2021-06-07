@@ -1,0 +1,91 @@
+{% extends 'website_files/base.html' %}
+{% load static %}
+{% block content %}
+    <section class="page-title page-title-layout5 bg-overlay bg-parallax text-center">
+      <div class="bg-img"><img src="{% static 'assets/images/page-titles/computers-3710419_1920.jpg' %}" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-3">
+            <span class="pagetitle__subheading">Suitable For Small To Midsize Businesses</span>
+            <h1 class="pagetitle__heading mb-0">Effective & Flexible Pricing That Adapts Your Needs</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <section class="pricing pt-0 bg-gray">
+      <div class="container">
+        <div class="row row-no-gutter pricing-wrapper">
+          
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="pricing-item">
+              <div>
+                <div class="pricing-item__header">
+                  <div class="pricing-item__price">
+                    <span class="pricing-item__currency">K</span><span>50</span><span
+                      class="pricing-item__time">/Monthly</span>
+                  </div>
+                  <h5 class="pricing-item__title mb-0">Starter Plan</h5>
+                </div>
+                <div class="pricing-item__content">
+                  <p class="pricing-item__desc">Our prices are very competitive and affordable.
+                  </p>
+                  <ul class="pricing-item__list list-items list-items-layout2 list-unstyled">
+                    <li>6 Emails</li>
+                    <li>3GB Storage</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="pricing-item">
+              <div>
+                <div class="pricing-item__header">
+                  <div class="pricing-item__price">
+                    <span class="pricing-item__currency">K</span><span>110</span><span
+                      class="pricing-item__time">/Monthly</span>
+                  </div>
+                  <h5 class="pricing-item__title mb-0">Basic Plan</h5>
+                </div>
+                <div class="pricing-item__content">
+                  <p class="pricing-item__desc">Our prices are very competitive and affordable.
+                  </p>
+                  <ul class="pricing-item__list list-items list-items-layout2 list-unstyled">
+                    <li>20 Emails</li>
+                    <li>12GB Storage</li>
+                  </ul>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="pricing-item">
+              <div>
+                <div class="pricing-item__header">
+                  <div class="pricing-item__price">
+                    <span class="pricing-item__currency">K</span><span>230</span><span
+                      class="pricing-item__time">/Monthly</span>
+                  </div>
+                  <h5 class="pricing-item__title mb-01">Advanced Plan</h5>
+                </div>
+                <div class="pricing-item__content">
+                  <p class="pricing-item__desc">Our prices are very competitive and affordable.
+                  </p>
+                  <ul class="pricing-item__list list-items list-items-layout2 list-unstyled">
+                    <li>50 Emails</li>
+                    <li>30GB Storage</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

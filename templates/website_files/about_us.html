@@ -1,0 +1,159 @@
+{% extends 'website_files/base.html' %}
+{% load static %}
+{% block content %}
+
+  <section class="page-title page-title-layout1 bg-overlay bg-parallax">
+    <div class="bg-img"><img src="{% static 'assets/images/page-titles/usa-1249880_1920.jpg' %}" alt="background"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+          <h1 class="pagetitle__heading">About Us</h1>
+          <p class="pagetitle__desc">We are experienced professionals who understand that IT services are changing, and
+            are true partners who care about your success. Our team provides a consultative approach on emerging
+            technology.
+          </p>
+          <a href="{% url 'it_solutions' %}" class="btn btn__primary mr-30">Our Services</a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secondary-nav sticky-top py-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="nav nav-tabs justify-content-center">
+            <a href="{% url 'about-us' %}" class="nav__link active">About Us</a>
+            <a href="{% url 'why_us' %}" class="nav__link">Why Choose Us</a>
+            <!-- <a href="{% url 'out_team' %}" class="nav__link">Leadership Team</a> -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about-layout1">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="heading-layout2 mb-30">
+            <h3 class="heading__title mb-30">Our technology allows you to offer latest software to your possible
+              customers!
+            </h3>
+            <p class="heading__desc mb-25">TechTitan has been helping organizations throughout the country to manage their
+              IT infrastructure with our unique approach to technology management and consultancy solutions. We have staff who are
+              ready to help. Here at <b>TechTitan</b>, we strive to help you improve efficiency, leverage technology, and provide better customer experiences with the modern technology
+              services available all over the world. Our skilled personnel, utilising the latest technologies
+              combined with decades of experience will help you and your business archieve the standard that you strive for and give you a competitive advantage over your peers, be it Emails, Software Development or IT Consultancy we got you covered. Start a conversation with us and have the service that you need to help your business grow.</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="about__img">
+            <img src="{% static 'assets/images/about/1.jpg' %}" alt="about">
+            <div class="cta-banner">
+              <div class="slick-carousel" data-slick='{"slidesToShow": 1, "arrows": false, "dots": true}'>
+                <div class="cta-banner__item">
+                  <div class="cta-banner__icon"><i class="icon-technician"></i></div>
+                  <h4 class="cta-banner__title mb-0">IT Consultancy that works to your advantage 100%
+                  </h4>
+                </div>
+                <div class="cta-banner__item">
+                  <div class="cta-banner__icon"><i class="icon-funnel"></i></div>
+                  <h4 class="cta-banner__title mb-0">Software that helps you manage your clients effectively and efficiently
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="history-timeline pb-0">
+    <div class="history-timeline-bg">
+      <div class="bg-img"><img src="{% static 'assets/images/backgrounds/d50d7a3e558848ab4e2d6c6e48657241.jpg' %}" alt="background"></div>
+    </div>
+    <div class="container">
+      <div class="row heading heading-layout2 mb-90">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <h2 class="heading__subtitle text__color">Explore Our Great Values!!</h2>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <h3 class="heading__title color-white">Your success story is our mission and aim.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-bar"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="timeline-carousel-wrapper">
+            <div class="slick-carousel carousel-arrows-light"
+              data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "arrows": true, "dots": false, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 768, "settings": {"slidesToShow": 2}}, {"breakpoint": 570, "settings": {"slidesToShow": 1}}]}'>
+              
+              <div class="timeline-item">
+                <h4 class="timeline-item__year">Value #1</h4>
+                <p class="timeline-item__desc text__color">We partner with you to enable and maintain your technology so you focus on your
+                  organization’s mission to succeed above all.
+                </p>
+              </div>
+              
+              <div class="timeline-item">
+                <h4 class="timeline-item__year">Value #2</h4>
+                <p class="timeline-item__desc text__color">Our support works around the clock to ensure your work is secure and
+                  monitored safely. We are working to provide you with the most efficient solutions.</p>
+              </div>
+              <div class="timeline-item">
+                <h4 class="timeline-item__year">Value #3</h4>
+                <p class="timeline-item__desc text__color">Our people are held to the highest level of accountability to ensure you
+                  are
+                  always satisfied with your results. We believe that honesty, integrity, and a commitment to ethical
+                  business practices is key.</p>
+              </div>
+              <div class="timeline-item">
+                <h4 class="timeline-item__year">Aim #1</h4>
+                <p class="timeline-item__desc text__color">Our aim is to help small to large business that lack a digital foot print atain one at very affordable rates.</p>
+              </div>
+              <div class="timeline-item">
+                <h4 class="timeline-item__year">Aim #2</h4>
+                <p class="timeline-item__desc text__color">Help in the fight against climate change by providing automated solutions that help you use less paper.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-5">
+          <div class="download-area">
+            <p class="download-area__text">Whether providing consulting expertise on a specific vendor technology,
+              strategizing on IT budget, providing a security assessment, or managing IT infrastructure, we can
+              provide it all
+            </p>
+            
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-7">
+          <div class="cta-banner bg-overlay bg-overlay-primary">
+            <h4 class="cta-banner__title">Our Vission</h4>
+            <p class="cta-banner__desc">Established to deliver leading edge universal secure technologies, intelligent technical solutions and consulting services to businesses, organizations and governmental bodies, Techtitan was founded with the vision to enable “secure access to any service, data and information anytime, anywhere “, providing its customers and business partners with robust, extensible and customizable security-enhanced solutions for information sharing, data exchange and communication</p>
+            <div class="d-flex flex-wrap">
+              <a href="{% url 'contact_us' %}" class="btn btn__white btn__bordered btn__xl btn__icon">
+                <span>Get Started</span>
+                <i class="icon-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{% endblock %}
+

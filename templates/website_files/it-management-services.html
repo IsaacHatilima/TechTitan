@@ -1,0 +1,375 @@
+
+{% extends 'website_files/base.html' %}
+{% load static %}
+{% block content %}    
+    <section class="page-title page-title-layout9 bg-overlay bg-parallax">
+      <div class="bg-img"><img src="{% static 'assets/images/page-titles/9.jpg' %}" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <h1 class="pagetitle__heading">IT Management Services</h1>
+            <p class="pagetitle__desc">Do you want to add equipment to your IT infrastructure? or do you need someone to manage your IT infrastructure while your focus on moving your business forward? Reach out to us.
+            </p>
+            <a href="{% url 'contact_us' %}" class="btn btn__white btn__bordered btn__xl btn__icon">
+              <span>Get Started</span><i class="icon-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="secondary-nav secondary-nav-internal-navigation sticky-top py-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="nav nav-tabs justify-content-center">
+              <a href="#" data-scroll="about" class="nav__link">Overview</a>
+              <a href="#" data-scroll="features" class="nav__link">Features</a>
+              <a href="#" data-scroll="banner" class="nav__link">Request A Quote </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about" class="about-layout4 pt-130 pb-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-lg-6">
+            <div class="heading-layout2 mb-70">
+              <h2 class="heading__subtitle color-body">Nationwide Service, Local Expertise</h2>
+              <h3 class="heading__title mb-30">Our expertise help your firm stay in the top tier when it comest to technology. We offer only the <span
+                 class="underlined-text">BEST</span> service possible
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="row about__Text">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+            <p>With the changing technology everyday that comes, you need to ensure your are not left behind. If you want to keep up with the current trands in tech, look no further
+              as we are here to ensure you keep up and have the best technology possible. Use the expertise and deep tech background of the best minds at Techtitan to create a comprehensive IT strategy for a digital and technological transformation of your organization that goes in line with your business objectives. Our strategic IT consulting will help you automate and digitalise operations, optimise the software portfolio, and implement the latest technologies
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 offset-xl-1">
+            <p>We consistently keep track of emerging technologies to deliver advanced software solutions. Our IT strategy consulting will help you choose the right technologies for your business and industry, map out the implementation strategy, as well as help you implement them. </p>
+            <p>Become a partner and achieve the following;</p>
+            <ul class="list-items list-items-layout2 list-horizontal list-unstyled d-flex flex-wrap mt-40 mb-0">
+              <li>Eliminate Repeat Entry</li>
+              <li>Simpliy Communication</li>
+              <li>Drive Business Process</li>
+              <li>Speed Up Transactions</li>
+              <li>Structure Data & Docs</li>
+              <li>Automate Workflows</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-12 col-lg-5">
+            <div class="about__img about__img-1">
+              <img src="{% static 'assets/images/about/2.jpg' %}" alt="about">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-7">
+            <div class="about__img about__img-2">
+              <img src="{% static 'assets/images/about/4.jpg' %}" alt="about">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+     Counters
+    =========================== -->
+    <!-- <section id="counters" class="counters pt-40">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+            <div class="counter-item">
+              <h4 class="counter">6,154</h4>
+              <p class="counter-item__desc">Projects And Software Developed</p>
+            </div>
+          </div>
+          
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+            <div class="counter-item">
+              <h4 class="counter">2,512</h4>
+              <p class="counter-item__desc">Qualified Employees And Developers With Us</p>
+            </div>
+          </div>
+          
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+            <div class="counter-item">
+              <h4 class="counter">1,784</h4>
+              <p class="counter-item__desc">Satisfied Clients We Have Served Globally</p>
+            </div>
+          </div>
+          
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+            <div class="counter-item">
+              <h4 class="counter">0,25</h4>
+              <p class="counter-item__desc">Years Of Experience In The IT & Software Industry</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ======================
+    Features Layout 2
+    ========================= -->
+    <section id="features" class="features-layout2 pt-130 pb-0 mb-130 z-index-2">
+      <div class="bg-img"><img src="{% static 'assets/images/backgrounds/7.jpg' %}" alt="background"></div>
+      <div class="container">
+        <div class="row heading heading-layout2 mb-50">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <h2 class="heading__subtitle">Ensure High Availability of Your Services</h2>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <h3 class="heading__title color-white">Easy solutions for all difficult IT problems, keep business safe &
+              ensure high availability.</h3>
+          </div>
+        </div>
+        <div class="row features-wrapper mt-40">
+          <!-- Feature item #1-->
+          <div class="col-sm-6 col-md-6 col-lg-3 feature-item">
+            <div class="feature-item__icon">
+              <i class="icon-statistic"></i>
+            </div>
+            <h4 class="feature-item__title mb-0">Fault Diagnosis</h4>
+          </div>
+          <!-- Feature item #2-->
+          <div class="col-sm-6 col-md-6 col-lg-3 feature-item">
+            <div class="feature-item__icon">
+              <i class="icon-management"></i>
+            </div>
+            <h4 class="feature-item__title mb-0">Hardware Support</h4>
+          </div>
+          <!-- Feature item #3-->
+          <div class="col-sm-6 col-md-6 col-lg-3 feature-item">
+            <div class="feature-item__icon">
+              <i class="icon-software"></i>
+            </div>
+            <h4 class="feature-item__title mb-0">Software Support</h4>
+          </div>
+          <!-- Feature item #4-->
+          <div class="col-sm-6 col-md-6 col-lg-3 feature-item">
+            <div class="feature-item__icon">
+              <i class="icon-relational"></i>
+            </div>
+            <h4 class="feature-item__title mb-0">Data Management</h4>
+          </div>
+          <!-- Feature item #5-->
+          <div class="col-sm-6 col-md-6 col-lg-3 feature-item">
+            <div class="feature-item__icon">
+              <i class="icon-website"></i>
+            </div>
+            <h4 class="feature-item__title mb-0">Online Presence</h4>
+          </div>
+          <!-- Feature item #6-->
+          <div class="col-sm-6 col-md-6 col-lg-3 feature-item">
+            <div class="feature-item__icon">
+              <i class="icon-Primary"></i>
+            </div>
+            <h4 class="feature-item__title mb-0">Work Colaboration</h4>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6 cta-banner-wrapper px-0">
+            <div class="cta-banner bg-overlay bg-overlay-primary mb-0">
+              <div class="bg-img"><img src="{% static 'assets/images/banners/4.jpg' %}" alt="background"></div>
+              <h4 class="cta-banner__title">Perfect Solutions That Your Business Demands!</h4>
+              <p class="cta-banner__desc">From network and device management to security, we're bringing IT together
+                for an integrated, overarching approach.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section id="pricing" class="pricing pt-130 mt--130 bg-no-repeat bg-bottom-center">
+      <div class="bg-img"><img src="{% static 'assets/images/backgrounds/12.jpg' %}" alt="backgrounds"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="heading heading-layout2 mb-60">
+              <h3 class="heading__title">Effective & flexible pricing <br> that adapts your needs!</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row row-no-gutter">
+          
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="pricing-item">
+              <div>
+                <div class="pricing-item__header">
+                  <div class="pricing-item__price">
+                    <span class="pricing-item__currency">$</span><span>50</span><span
+                      class="pricing-item__time">/Monthly</span>
+                  </div>
+                  <h5 class="pricing-item__title mb-0">Starter Plan</h5>
+                </div>
+                <div class="pricing-item__content">
+                  <p class="pricing-item__desc">Fast project turnaround time, substantial cost savings & quality
+                    standards.
+                  </p>
+                  <ul class="pricing-item__list list-items list-items-layout2 list-unstyled">
+                    <li>Five Brand Monitors</li>
+                    <li>Five Keyword Monitors</li>
+                    <li>Full Social Profiles</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pricing-item__footer">
+                <a href="#" class="btn btn__secondary btn__block btn__icon">
+                  <span>Purchase Now</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="pricing-item">
+              <div>
+                <div class="pricing-item__header">
+                  <div class="pricing-item__price">
+                    <span class="pricing-item__currency">$</span><span>70</span><span
+                      class="pricing-item__time">/Monthly</span>
+                  </div>
+                  <h5 class="pricing-item__title mb-0">Basic Plan</h5>
+                </div>
+                <div class="pricing-item__content">
+                  <p class="pricing-item__desc">Fast project turnaround time, substantial cost savings & quality
+                    standards.
+                  </p>
+                  <ul class="pricing-item__list list-items list-items-layout2 list-unstyled">
+                    <li>Five Brand Monitors</li>
+                    <li>Five Keyword Monitors</li>
+                    <li>Full Social Profiles</li>
+                    <li>500 Search Results </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pricing-item__footer">
+                <a href="#" class="btn btn__primary btn__block btn__icon">
+                  <span>Purchase Now</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="pricing-item">
+              <div>
+                <div class="pricing-item__header">
+                  <div class="pricing-item__price">
+                    <span class="pricing-item__currency">$</span><span>90</span><span
+                      class="pricing-item__time">/Monthly</span>
+                  </div>
+                  <h5 class="pricing-item__title mb-01">Advanced Plan</h5>
+                </div>
+                <div class="pricing-item__content">
+                  <p class="pricing-item__desc">Fast project turnaround time, substantial cost savings & quality
+                    standards.
+                  </p>
+                  <ul class="pricing-item__list list-items list-items-layout2 list-unstyled">
+                    <li>Five Brand Monitors</li>
+                    <li>Five Keyword Monitors</li>
+                    <li>Basic Quota </li>
+                    <li>PDF reports</li>
+                    <li>Full Social Profiles</li>
+                    <li>500 Search Results </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pricing-item__footer">
+                <a href="#" class="btn btn__secondary btn__block btn__icon">
+                  <span>Purchase Now</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap justify-content-center align-items-center mt-10">
+            <a href="contact-us.html" class="btn btn__secondary btn__bordered mx-3">Find Your Solution</a>
+            <a href="industries.html" class="btn btn__primary btn__link mx-3">
+              <span>Explore All Services</span><i class="icon-arrow-right icon-outlined"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+
+
+    <section id="banner" class="banner-layout1 pt-90 pb-90 bg-overlay bg-overlay-primary">
+      <div class="bg-img"><img src="{% static 'assets/images/banners/3.jpg' %}" alt="background"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="col-inner">
+              <div class="heading-layout2 heading-light mb-40">
+                <h3 class="heading__title mb-30">Timely service delivery & incident resolutions!!</h3>
+                <p class="heading__desc">We are experienced professionals who understand that IT services are changing, and are true partners who care about your success. Our team provides a consultative approach on emerging technology.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="contact-panel">
+              <form class="contact-panel__form" method="post" action="{% url 'find_out' %}" id="contactForm">
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="contact-name">Name (required)</label>
+                      <input type="text" required class="form-control" placeholder="Name" id="contact-name" name="contact-name"
+                        required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="contact-email">Email (required)</label>
+                      <input type="email" required class="form-control" placeholder="Email" id="contact-email"
+                        name="contact-email" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="form-group">
+                      <label for="contact-Phone">Inquiry (required)</label>
+                      <select required class="form-control">
+                        <option value="">Select Service</option>
+                        <option value="Email Hosting">IT Management</option>
+                        <option value="IT Counsultation">Cyber Security</option>
+                        <option value="Software Development">Software Development</option>
+                        <option value="Website Developemnt">Networking And Cloud Computing</option>
+                        <option value="Website Developemnt">IT Consulting</option>
+                        <option value="Website Developemnt">Backup & Recovery</option>
+                        <option value="Website Developemnt">Email Hosting</option>
+                        <option value="Website Developemnt">Website Hosting</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="form-group">
+                      <label for="contact-message">Additional Details (required)</label>
+                      <textarea required class="form-control" placeholder="Describe your inquirey!" id="contact-message"
+                        name="contact-message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn__secondary btn__xl btn__block">Submit Request </button>
+                    <div class="contact-result"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
