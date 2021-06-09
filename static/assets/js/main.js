@@ -24,7 +24,7 @@
      
  ----------------------------*/
 
-$(function () {
+ $(function () {
 
     "use strict";
 
@@ -120,7 +120,7 @@ $(function () {
             $(this).parent().addClass('background-size-auto');
         }
         $(this).remove();
-    });
+    }); 
 
     /*==========   Add active class to accordions   ==========*/
     $('.accordion-item__header').on('click', function () {
@@ -178,26 +178,6 @@ $(function () {
         $('#register-popup').removeClass('inActive').addClass('active');
     });
 
-    /*==========  Contact Form validation  ==========*/
-    var contactForm = $("#contactForm"),
-        contactResult = $('.contact-result');
-    contactForm.validate({
-        debug: false,
-        submitHandler: function (contactForm) {
-            $(contactResult, contactForm).html('Please Wait...');
-            $.ajax({
-                type: "POST",
-                url: "assets/php/contact.php",
-                data: $(contactForm).serialize(),
-                timeout: 20000,
-                success: function (msg) {
-                    $(contactResult, contactForm).html('<div class="alert alert-success" role="alert"><strong>Thank you. We will contact you shortly.</strong></div>').delay(3000).fadeOut(2000);
-                },
-                error: $('.thanks').show()
-            });
-            return false;
-        }
-    });
 
     /*==========   Slick Carousel ==========*/
     $('.slick-carousel').slick();

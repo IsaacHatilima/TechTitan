@@ -1,0 +1,374 @@
+{% extends 'website_files/base.html' %}
+{% load static %}
+{% block content %}
+
+  <section class="slider">
+    <div class="slick-carousel carousel-arrows-light carousel-dots-light m-slides-0"
+      data-slick='{"slidesToShow": 1, "arrows": true, "dots": true, "speed": 700,"fade": true,"cssEase": "linear"}'>
+      <div class="slide-item align-v-h bg-overlay bg-img1">
+        <div class="container ">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+              <div class="slide-item__content">
+                <h2 class="slide-item__title">Latest Software To Your Possible Customers!!</h2>
+                <p class="slide-item__desc">We are experienced professionals who understand that IT services are
+                  changing, and are true partners who care about your success.</p>
+                <a href="{% url 'contact_us' %}" class="btn btn__primary btn__hi">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-item align-v-h bg-overlay bg-img2">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+              <div class="slide-item__content">
+                <h2 class="slide-item__title">Online Presence <br> To Ensure High Availability.</h2>
+                <p class="slide-item__desc">We understand the importance of having an online presence. We are therefore, strive to help you have a digital footprint</p>
+                <a href="{% url 'contact_us' %}" class="btn btn__primary btn__primary-style2 btn__hi">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-layout3 pt-0 pb-90 bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-8">
+          <div class="row features-wrapper">
+            
+            <div class="col-sm-4 feature-item">
+              <h4 class="feature-item__title">Software Asset</h4>
+              <p class="feature-item__desc">All aspects of your software assets including development, purchasing, deployment &
+                maintenance.</p>
+              <a href="#"><i class="icon-arrow-right icon-outlined"></i></a>
+            </div>
+            <div class="col-sm-4 feature-item">
+              <h4 class="feature-item__title">Enterprise Services</h4>
+              <p class="feature-item__desc">Ranging from but not limited to IT Counsultation, Software Development, Email Hosting etc.</p>
+              <a href="#"><i class="icon-arrow-right icon-outlined"></i></a>
+            </div>
+            <div class="col-sm-4 feature-item">
+              <h4 class="feature-item__title">Custom Requests</h4>
+              <p class="feature-item__desc">We build bespoke and dynamic systems with associated workflows, and tasks.</p>
+              <a href="#"><i class="icon-arrow-right icon-outlined"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <div class="feature-item feature-item-custom bg-primary">
+            
+            <h4 class="feature-item__title">Thinking insights, verified and realtime information help you
+              make the right decisions!
+            </h4>
+            <a href="{% url 'it_solutions' %}" class="btn btn__white btn__link">
+              <span>Find Your Solution</span><i class="icon-arrow-right icon-outlined"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-layout6 bg-gray pt-0 pb-0">
+    <div class="container">
+      <div class="row heading-layout2 mb-70">
+        <div class="col-12">
+          <h2 class="heading__subtitle color-body">Nationwide Service, Local Expertise</h2>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+          <h3 class="heading__title mb-30">Keep your business safe & ensure high availability.</h3>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 about__Text">
+          <h5 class=" mb-30">Message from our Founder.</h5>
+          <p>Here at <b>TechTitan</b>, we strive to help you improve efficiency, leverage tech, and provide better customer experiences with the modern technology
+            services available all over the world. Our skilled personnel, utilising the latest technologies
+            combined with decades of experience will help you and your business archieve the standard that you strive for and give you a competitive advantage over your peers</p>
+        </div>
+      </div>
+    </div>
+    <div class="image-wrapper bg-white">
+      <div class="container">
+        <div class="row align-items-end">
+          <div class="col-sm-12 col-md-12 col-lg-7">
+            <div class="about__img">
+              <img src="{% static 'assets/images/about/IMG_0752.jpg' %}" alt="about">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-layout2 services-masonry bg-no-repeat bg-size-auto bg-top-right pt-130 pb-90 bg-img3">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+          <div class="heading heading-layout2 text-center mb-50">
+            <h2 class="heading__subtitle">Only settle for the best</h2>
+            <h3 class="heading__title">Our technology allows you to offer the best service to your possible
+              customers!
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="row services-wrapper">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="service-item">
+            <div class="service-item__content">
+              <div class="service-item__icon">
+                <i class="icon-server"></i>
+              </div>
+              <h4 class="service-item__title">IT Management <br> Services</h4>
+              <p class="service-item__desc">IT management services that manages and oversees the IT infrastructure of your
+                organization responsible for networking and operations.</p>
+              <a href="{% url 'it_management_services' %}" class="btn btn__secondary btn__link">
+                <span>Read More</span>
+                <i class="icon-arrow-right"></i>
+              </a>
+            </div>
+            <div class="service-item__overlay bg-overlay bg-overlay-primary">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="service-item">
+            <div class="service-item__content">
+              <div class="service-item__icon">
+                <i class="icon-cloud"></i>
+              </div>
+              <h4 class="service-item__title">Cyber Security<br> Services</h4>
+              <p class="service-item__desc">Drive your business and manage risk with us when it comes
+                cyber security, cloud, and manage security services and extend your team with leading experts.</p>
+              <a href="{% url 'cyber_security_services' %}" class="btn btn__secondary btn__link">
+                <span>Read More</span>
+                <i class="icon-arrow-right"></i>
+              </a>
+            </div>
+            <div class="service-item__overlay bg-overlay bg-overlay-primary">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="service-item">
+            <div class="service-item__content">
+              <div class="service-item__icon">
+                <i class="icon-programming"></i>
+              </div>
+              <h4 class="service-item__title">Software Development<br> Services</h4>
+              <p class="service-item__desc">We develop solutions that help you make informed decisions that keep your business going forward especially with rapid changes we face on a daily basis.</p>
+              <a href="{% url 'software_dev_services' %}" class="btn btn__secondary btn__link">
+                <span>Read More</span>
+                <i class="icon-arrow-right"></i>
+              </a>
+            </div>
+            <div class="service-item__overlay bg-overlay bg-overlay-primary">
+            </div>
+          </div>
+        </div>  
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="service-item">
+            <div class="service-item__content">
+              <div class="service-item__icon">
+                <i class="icon-network"></i>
+              </div>
+              <h4 class="service-item__title">Networking and Cloud Computing<br> Services</h4>
+              <p class="service-item__desc">Cloud computing is the on-demand, availability of computer system
+                resources, especially data storage and computing power, without direct active management by the user.
+              </p>
+              <a href="{% url 'networking_and_cloud_services' %}" class="btn btn__secondary btn__link">
+                <span>Read More</span>
+                <i class="icon-arrow-right"></i>
+              </a>
+            </div>
+            <div class="service-item__overlay bg-overlay bg-overlay-primary">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="service-item">
+            <div class="service-item__content">
+              <div class="service-item__icon">
+                <i class="icon-technician"></i>
+              </div>
+              <h4 class="service-item__title">IT Consulting <br> Services</h4>
+              <p class="service-item__desc">Trying to implement new technologies can be a challenge. With us on you side, we will give you information on the current technologies to ensure you have the best technologies possible.</p>
+              <a href="{% url 'it_consultations' %}" class="btn btn__secondary btn__link">
+                <span>Read More</span>
+                <i class="icon-arrow-right"></i>
+              </a>
+            </div>
+            <div class="service-item__overlay bg-overlay bg-overlay-primary">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="service-item">
+            <div class="service-item__content">
+              <div class="service-item__icon">
+                <i class="icon-file"></i>
+              </div>
+              <h4 class="service-item__title">Backup & Recovery<br> Services</h4>
+              <p class="service-item__desc">While you can’t predict unexpected events, we’ll ensure the right
+                precautions are in place to minimize downtime and keep you moving in the right direction.</p>
+              <a href="{% url 'data_backup_and_recovery' %}" class="btn btn__secondary btn__link">
+                <span>Read More</span>
+                <i class="icon-arrow-right"></i>
+              </a>
+            </div>
+            <div class="service-item__overlay bg-overlay bg-overlay-primary">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-md-12 col-lg-5">
+          <p class="fz-16 my-4">Trusted by multiple organizations, for 5 years and running, it has been
+            delivering
+            smiles to hundreds of IT advisors, developers, users, and business owners.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-7 d-flex align-items-center justify-content-end">
+          <a href="{% url 'it_solutions' %}" class="btn btn__secondary btn__hi mr-30">Find Your Solution</a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features-layout1 pt-130 pb-220 bg-img4">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+          <div class="heading heading-layout2 mb-40">
+            <h2 class="heading__subtitle color-body">Ensure High Availability of Your Services</h2>
+            <h3 class="heading__title color-white">Easy solutions for all difficult IT problems, keep businesses safe &
+              ensure high availability.</h3>
+          </div>
+          <a href="{% url 'contact_us' %}" class="btn btn__white btn__bordered btn__xl btn__icon minwidth-170">
+            <span>Get Started</span>
+            <i class="icon-arrow-right"></i>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+          <div class="row features-wrapper mt-40">
+            <div class="col-sm-6 feature-item">
+              <div class="feature-item__icon">
+                <i class="icon-statistic"></i>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <h4 class="feature-item__title mb-0">Software Development</h4>
+                <a href="#"><i class="icon-arrow-right icon-outlined"></i></a>
+              </div>
+            </div>
+            <div class="col-sm-6 feature-item">
+              <div class="feature-item__icon">
+                <i class="icon-management"></i>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <h4 class="feature-item__title mb-0">IT Counsultation</h4>
+                <a href="#"><i class="icon-arrow-right icon-outlined"></i></a>
+              </div>
+            </div>
+            <div class="col-sm-6 feature-item">
+              <div class="feature-item__icon">
+                <i class="icon-software"></i>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <h4 class="feature-item__title mb-0">Email Hosting</h4>
+                <a href="#"><i class="icon-arrow-right icon-outlined"></i></a>
+              </div>
+            </div>
+            <div class="col-sm-6 feature-item">
+              <div class="feature-item__icon">
+                <i class="icon-relational"></i>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <h4 class="feature-item__title mb-0">Website Hosting</h4>
+                <a href="#"><i class="icon-arrow-right icon-outlined"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-50 contact-text">
+            <div class="col-sm-9 px-0">
+              <strong class="color-white">If you have any questions or need help, feel free to contact with our team,
+                or call
+                <a href="#">(+260) 966477311</a></strong>
+            </div>
+            <div class="col-sm-3 px-0 d-flex justify-content-end">
+              <a href="{% url 'contact_us' %}" class="btn btn__primary btn__primary-style2 minwidth-120">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="clients border-top pt-50 pb-50">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="slick-carousel"
+            data-slick='{"slidesToShow": 6, "arrows": false, "dots": false, "autoplay": true,"autoplaySpeed": 2000, "infinite": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 4}}, {"breakpoint": 767, "settings": {"slidesToShow": 3}}, {"breakpoint": 480, "settings": {"slidesToShow": 2}}]}'>
+            <div class="client">
+              <img src="{% static 'assets/images/clients/1.jpg' %}" alt="client">
+              <img src="{% static 'assets/images/clients/1.jpg' %}" alt="client">
+            </div>
+            <div class="client">
+              <img src="{% static 'assets/images/clients/Techmasters.png' %}" alt="client">
+              <img src="{% static 'assets/images/clients/Techmasters.png' %}" alt="client">
+            </div>
+            <div class="client">
+              <img src="{% static 'assets/images/clients/idsp.jpg' %}" alt="client">
+              <img src="{% static 'assets/images/clients/idsp.jpg' %}" alt="client">
+            </div>
+            <div class="client">
+              <img src="{% static 'assets/images/clients/4.png' %}" alt="client">
+              <img src="{% static 'assets/images/clients/4.png' %}" alt="client">
+            </div>
+            <div class="client">
+              <img src="{% static 'assets/images/clients/5.png' %}" alt="client">
+              <img src="{% static 'assets/images/clients/5.png' %}" alt="client">
+            </div>
+            <div class="client">
+              <img src="{% static 'assets/images/clients/6.png' %}" alt="client">
+              <img src="{% static 'assets/images/clients/6.png' %}" alt="client">
+            </div>
+            <div class="client">
+              <img src="{% static 'assets/images/clients/7.png' %}" alt="client">
+              <img src="{% static 'assets/images/clients/7.png' %}" alt="client">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner-layout2 pt-0 pb-100 bg-img6">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+          <div class="banner-text">
+            <div class="heading-layout2 heading-light mb-40">
+              <h3 class="heading__title mb-30">Timely service delivery!!</h3>
+              <p class="heading__desc">We ensure that the services we offer are delivered when they are scheduled for. No delays because we understand that your business as to go forward at all times.
+              </p>
+            </div>
+            <a href="{% url 'contact_us' %}" class="btn btn__white btn__bordered btn__hi mb-30">Get Started</a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+          <div class="banner-img">
+            <img src="{% static 'assets/images/logo/TechTitan_Logo_1.jpg' %}" alt="banner">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

@@ -1,0 +1,46 @@
+.form-color{
+    color: whitesmoke;
+}
+
+.bg-img1{
+    background-image: URL(../images/sliders/Top-6-Software-Development-Methodologies.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img2{
+    background-image: URL(../images/sliders/Online-Presence.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img3{
+    background-image: URL(../images/backgrounds/6.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img4{
+    background-image: URL(../images/backgrounds/10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img5{
+    background-image: URL(../images/backgrounds/11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img6{
+    background-image: URL(../images/backgrounds/brickred.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img7{
+    background-image: URL(../images/page-titles/usa-1249880_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-size: auto;
+}

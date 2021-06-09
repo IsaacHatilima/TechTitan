@@ -1,10 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def home(request):
+def home_view(request):
     if request.method == 'GET':
-        return render(request, 'website_files/index.html', {'home' : True})
-
+        return render(request, 'website_files/home-view.html', {'home' : True})
 
 def about_us(request):
     if request.method == 'GET':

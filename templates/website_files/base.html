@@ -13,6 +13,14 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
   <link rel="stylesheet" href="{% static 'assets/css/libraries.css' %}">
   <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/more.css' %}">
+
+  <style>
+
+
+
+  </style>
+
 </head>
 
 <body>
@@ -23,84 +31,77 @@
       </div>
     </div>
     <header class="header header-transparent">
-        <nav class="navbar navbar-expand-lg sticky-navbar">
-            <div class="container">
-                <button type="button" class="action__btn action__btn-burgerMenu mr-30 d-none d-lg-block">
-                <i class="icon-nav"></i>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                <img src="{% static 'assets/images/logo/TechTitan_Logo_1.jpg' %}" class="logo-light" width="100px" alt="logo">
-                <img src="{% static 'assets/images/logo/TechTitan_Logo_1.jpg' %}" class="logo-dark" width="100px" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button">
-                <span class="menu-lines"><span></span></span>
-                </button>
-                <div class="collapse navbar-collapse" id="mainNavigation">
-                <ul class="navbar-nav mr-auto ml-auto">
-                    <li class="nav__item">
-                        <a href="{% url 'home' %}" class="nav__item-link {% if home %}active{% endif %}">Home</a>
-                    </li>
-                    <li class="nav__item  has-dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link {% if about or why_us %}active{% endif %}">Company</a>
-                        <ul class="dropdown-menu">
-                            <li class="nav__item">
-                            <a href="{% url 'about-us' %}" class="nav__item-link">About Us</a>
-                            </li>
-                            <li class="nav__item">
-                            <a href="{% url 'why_us' %}" class="nav__item-link">Why Choose Us</a>
-                            </li>
-                            <!-- <li class="nav__item">
-                            <a href="{% url 'out_team' %}" class="nav__item-link">Leadership Team</a>
-                            </li> -->
-                        </ul>
-                    </li>
-                    <li class="nav__item  has-dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link {% if it_things %}active{% endif %}">IT Solutions</a>
-                        <ul class="dropdown-menu wide-dropdown-menu">
-                            <li class="nav__item">
-                            <div class="row mx-0">
-                                <div class="col-sm-7 dropdown-menu-col">
-                                  <a href="{% url 'it_solutions' %}" class="nav__item-link dropdown-menu-title">IT Solutions</a>
-                                  <ul class="nav flex-column">
-                                      <li class="nav__item"><a class="nav__item-link" href="{% url 'it_management_services' %}">IT Management</a></li>
-                                      <li class="nav__item"><a class="nav__item-link" href="{% url 'cyber_security_services' %}">Cyber Security</a></li>
-                                      <li class="nav__item"><a class="nav__item-link" href="{% url 'software_dev_services' %}">Software Development</a></li>
-                                      <li class="nav__item"><a class="nav__item-link" href="{% url 'networking_and_cloud_services' %}">Networking And Cloud Computing</a></li>    
-                                      <li class="nav__item"><a class="nav__item-link" href="{% url 'it_consultations' %}">IT Consulting</a></li>
-                                      <li class="nav__item"><a class="nav__item-link" href="{% url 'data_backup_and_recovery' %}">Backup & Recovery</a></li> 
-                                  </ul>
-                                </div>
-                                <div class="col-sm-5 dropdown-menu-col">
-                                  <a href="{% url 'data_backup_and_recovery' %}" class="nav__item-link dropdown-menu-title">Internet of Things</a>
-                                  <ul class="nav flex-column">
-                                      <li class="nav__item"><a class="nav__item-link"
-                                          href="{% url 'email_hosting' %}">Email Hosting</a>
-                                      </li> 
-                                      <li class="nav__item"><a class="nav__item-link"
-                                          href="{% url 'web_hosting' %}">Website Hosting</a>
-                                      </li> 
-                                  </ul>
-                                </div>
-                            </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- <li class="nav__item">
-                      <a href="{% url 'stories' %}" class="nav__item-link">Stories</a>
-                    </li> -->
-                    <li class="nav__item">
-                        <a href="{% url 'contact_us' %}" class="nav__item-link {% if contact %}active{% endif %}">Contacts</a>
-                    </li>
-                </ul>
-                </div>
-                <ul class="navbar-actions list-unstyled mb-0 d-flex align-items-center">
-                <li class="d-none d-xl-block">
-                    <a href="{% url 'request_quote' %}" class="btn btn__primary btn__primary-style2 btn_ action__btn-contact">Request
-                    A Quote</a>
+      <nav class="navbar navbar-expand-lg sticky-navbar">
+        <div class="container">
+          <button type="button" class="action__btn action__btn-burgerMenu mr-30 d-none d-lg-block">
+            <i class="icon-nav"></i>
+          </button>
+          <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'assets/images/logo/TechTitan_Logo_1.jpg' %}" class="logo-light" width="100px" alt="logo">
+            <img src="{% static 'assets/images/logo/TechTitan_Logo_1.jpg' %}" class="logo-dark" width="100px" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button">
+            <span class="menu-lines"><span></span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav mr-auto ml-auto">
+                <li class="nav__item">
+                    <a href="{% url 'home' %}" class="nav__item-link {% if home %}active{% endif %}">Home</a>
                 </li>
-                </ul>
-            </div>
-        </nav>
+                <li class="nav__item  has-dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link {% if about or why_us %}active{% endif %}">Company</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav__item">
+                          <a href="{% url 'about-us' %}" class="nav__item-link">About Us</a>
+                        </li>
+                        <li class="nav__item">
+                          <a href="{% url 'why_us' %}" class="nav__item-link">Why Choose Us</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item  has-dropdown">
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link {% if it_things %}active{% endif %}">IT Solutions</a>
+                  <ul class="dropdown-menu wide-dropdown-menu">
+                    <li class="nav__item">
+                      <div class="row mx-0">
+                        <div class="col-sm-7 dropdown-menu-col">
+                          <a href="{% url 'it_solutions' %}" class="nav__item-link dropdown-menu-title">IT Solutions</a>
+                          <ul class="nav flex-column">
+                            <li class="nav__item"><a class="nav__item-link" href="{% url 'it_management_services' %}">IT Management</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="{% url 'cyber_security_services' %}">Cyber Security</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="{% url 'software_dev_services' %}">Software Development</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="{% url 'networking_and_cloud_services' %}">Networking And Cloud Computing</a></li>    
+                            <li class="nav__item"><a class="nav__item-link" href="{% url 'it_consultations' %}">IT Consulting</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="{% url 'data_backup_and_recovery' %}">Backup & Recovery</a></li> 
+                          </ul>
+                        </div>
+                        <div class="col-sm-5 dropdown-menu-col">
+                          <a href="{% url 'data_backup_and_recovery' %}" class="nav__item-link dropdown-menu-title">Internet of Things</a>
+                          <ul class="nav flex-column">
+                              <li class="nav__item"><a class="nav__item-link"
+                                  href="{% url 'email_hosting' %}">Email Hosting</a>
+                              </li> 
+                              <li class="nav__item"><a class="nav__item-link"
+                                  href="{% url 'web_hosting' %}">Website Hosting</a>
+                              </li> 
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="{% url 'contact_us' %}" class="nav__item-link {% if contact %}active{% endif %}">Contacts</a>
+                </li>
+            </ul>
+          </div>
+          <!-- <ul class="navbar-actions list-unstyled mb-0 d-flex align-items-center">
+            <li class="d-none d-xl-block">
+              <a href="{% url 'request_quote' %}" class="btn btn__primary btn__primary-style2 btn_ action__btn-contact">Request A Quote</a>
+            </li>
+          </ul> -->
+        </div>
+      </nav>
     </header>
     {% block content %}
 
@@ -112,7 +113,6 @@
 
 
     <footer class="footer bg-heading">
-      <div class="bg-img"></div>
       <div class="footer-contact pt-50 pb-50">
         <div class="container">
           <div class="row">
@@ -245,68 +245,6 @@
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
           </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="login-popup" id="login-popup">
-      <div class="login-popup-wrapper">
-        <form class="login-popup__form">
-          <h3 class="login-popup__title">Login!</h3>
-          <p class="login-popup__desc">Connect, organize and get things done to keep your IT business safe.</p>
-          <div class="form-group mb-30">
-            <label>Email (required)</label>
-            <input type="text" class="form-control" placeholder="username">
-          </div>
-          <div class="form-group mb-20">
-            <label>Password (required)</label>
-            <input type="password" class="form-control" placeholder="password">
-          </div>
-          <div class="d-flex align-items-center justify-content-between mb-20">
-            <div class="custom-control custom-checkbox d-flex align-items-center">
-              <input type="checkbox" class="custom-control-input" id="customCheck1">
-              <label class="custom-control-label" for="customCheck1">Remember Me!</label>
-            </div>
-            <a href="#" class="fz-14 font-weight-bold color-secondary">Forget Password?</a>
-          </div>
-          <button type="submit" class="btn btn__secondary btn__block">Login</button>
-        </form>
-        <div class="d-flex justify-content-center align-items-center mt-20">
-          <span class="color-white fz-14 font-weight-bold">Don’t Have An Account?</span>
-          <button id="go-register" class="go-register fz-14 font-weight-bold">
-            <span>Register Here</span><i class="icon-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="login-popup" id="register-popup">
-      <div class="login-popup-wrapper">
-        <form class="login-popup__form">
-          <h3 class="login-popup__title">Register!</h3>
-          <p class="login-popup__desc">Connect, organize and get things done to keep your IT business safe.</p>
-          <div class="form-group mb-30">
-            <label>Email (required)</label>
-            <input type="text" class="form-control" placeholder="username">
-          </div>
-          <div class="form-group mb-20">
-            <label>Password (required)</label>
-            <input type="password" class="form-control" placeholder="password">
-          </div>
-          <div class="d-flex align-items-center justify-content-between mb-20">
-            <div class="custom-control custom-checkbox d-flex align-items-center">
-              <input type="checkbox" class="custom-control-input" id="customCheck2">
-              <label class="custom-control-label" for="customCheck2">I read & agree to <a href="#">Terms &
-                  Conditions</a></label>
-            </div>
-          </div>
-          <button type="submit" class="btn btn__secondary btn__block">Register</button>
-        </form>
-        <div class="d-flex justify-content-center align-items-center mt-20">
-          <span class="color-white fz-14 font-weight-bold">Have An Account?</span>
-          <button id="go-login" class="go-login fz-14 font-weight-bold">
-            <span>Login Here</span><i class="icon-arrow-right"></i>
-          </button>
         </div>
       </div>
     </div>
