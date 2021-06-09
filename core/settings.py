@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-0kgx$am=i6-w3^k-!fll54(d+-f8^_4($th=os#)uiviv)qg2k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': 'techzm_techtitan',
-        'NAME': 'techtitan',
-        # 'USER' : 'techzm_demo',
-        'USER' : 'admin',
-        # 'PASSWORD' : 'jlzn@h4mT^,0',
-        'PASSWORD' : 'Password123$$',
+        'NAME': 'techzm_techtitan',
+        # 'NAME': 'techtitan',
+        'USER' : 'techzm_demo',
+        # 'USER' : 'admin',
+        'PASSWORD' : 'jlzn@h4mT^,0',
+        # 'PASSWORD' : 'Password123$$',
         'HOST' : 'localhost',
         'PORT' : '3306',
     }
@@ -130,14 +130,14 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
-# STATIC_ROOT = os.path.join('/home/techzm/techtitan.co.zm/static')
+STATIC_ROOT = os.path.join('/home/techzm/techtitan.co.zm/static')
 # STATIC_ROOT = 'staticfiles'
 # STATICFILES_DIRS = (
 #     os.path.join(BASE_DIR, 'static'),
 # )
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# MEDIA_ROOT = os.path.join(BASE_DIR, '/home/techzm/techtitan.co.zm/media')
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, '/home/techzm/techtitan.co.zm/media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
